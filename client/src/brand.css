@@ -1,0 +1,3 @@
+.brand-logo{display:block;width:36px;height:36px;flex:none}
+.footer-brand .brand-logo{width:30px;height:30px}
+@media(max-width:650px){.brand-logo{width:32px;height:32px}}

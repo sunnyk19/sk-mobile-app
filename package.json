@@ -1,0 +1,19 @@
+{
+  "name": "sk-mobiles-platform",
+  "private": true,
+  "workspaces": [
+    "client",
+    "server"
+  ],
+  "scripts": {
+    "dev": "concurrently -k -n client,server -c green,cyan \"npm run dev -w client\" \"npm run start:dev -w server\"",
+    "build": "npm run build -w client && npm run build -w server",
+    "typecheck": "npm run typecheck -w client && npm run typecheck -w server"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.0"
+  },
+  "overrides": {
+    "shell-quote": "^1.11.0"
+  }
+}
